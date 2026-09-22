@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Search, Heart, Star, Film, Loader, AlertCircle } from 'lucide-react';
 import axios from 'axios';
+const BACKEND_URL = 'https://trackzio-movie-app.onrender.com/api/movies';
 
-const BACKEND_URL = 'http://localhost:5000/api/movies';
 
 export default function App() {
   const [movies, setMovies] = useState([]);
